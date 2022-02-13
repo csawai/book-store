@@ -9,7 +9,7 @@ import (
 var (
 	db * gorm.db
 )
-
+//this is not yet tested. 
 func connect () {
 	d, err := Open("postgres", "chetan:1234/book")
 	if err != nil{
