@@ -11,7 +11,9 @@ var (
 )
 //this is not yet tested. 
 func connect () {
-	d, err := Open("postgres", "chetan:1234/book")
+
+	//this db needs to be authenticated properly
+	d, err := Open("postgres", "postgres:1234/book")
 	if err != nil{
 		panic(err)
 	}
